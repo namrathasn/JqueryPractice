@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <body>
+        <h1>add class method</h1>
+        <div class="images">
+            <img src="image1.jpg" alt="">
+            <img src="image2.jpg" alt="">
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+$("img").addClass("styleclass");
+                });
+
+            });
+        </script>
+        <style>
+            .styleclass{
+                border: 5px solid green;
+            }
+        </style>
+
+        <button>try add class()</button>
+    </body>
+   </html>
